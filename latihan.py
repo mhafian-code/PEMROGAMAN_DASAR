@@ -1,9 +1,7 @@
 import math
 
 # Latihan 1: Konversi suhu Celcius menjadi Reamur dan Fahrenheit
-# Input: suhu dalam Celcius
-# Proses: R = 4/5 * C dan F = 9/5 * C + 32
-# Output: suhu dalam Reamur dan Fahrenheit
+
 def latihan1():
     print("--- Latihan 1: Konversi Celcius ke Reamur & Fahrenheit ---")
     c = float(input("Masukkan suhu dalam Celcius: "))
@@ -14,9 +12,7 @@ def latihan1():
 
 
 # Latihan 2: Sisi miring segitiga siku-siku
-# Input: a dan b (sisi pembentuk sudut siku-siku)
-# Proses: c = sqrt(a^2 + b^2)
-# Output: sisi miring (c)
+
 def latihan2():
     print("--- Latihan 2: Sisi Miring Segitiga Siku-siku ---")
     a = float(input("Masukkan panjang sisi a: "))
@@ -26,9 +22,7 @@ def latihan2():
 
 
 # Latihan 3: Menghitung usia berdasarkan tahun lahir dan tahun sekarang
-# Input: Tahun lahir (tl), Tahun sekarang (ts)
-# Proses: Umur = ts - tl
-# Output: Cetak Umur
+
 def latihan3():
     print("--- Latihan 3: Menghitung Usia ---")
     tl = int(input("Masukkan tahun lahir (tl): "))
@@ -38,9 +32,7 @@ def latihan3():
 
 
 # Latihan 4: Menguji apakah suhu (Celcius) adalah beku, cair, gas
-# Input: suhu dalam celcius (bil bulat)
-# Proses: jika < 0 = beku, 0-100 = cair, dan > 100 = gas
-# Output: beku, cair, gas
+
 def latihan4():
     print("--- Latihan 4: Beku / Cair / Gas ---")
     suhu = int(input("Masukkan suhu dalam Celcius: "))
@@ -54,12 +46,7 @@ def latihan4():
 
 
 # Latihan 5: Mengetahui bilangan terbesar dari n buah bilangan
-# Input: bilangan-bilangan sebanyak n kali
-# Proses: simpan nilai masing-masing bil yang diinputkan user,
-#   jika bil pertama, langsung catat bahwa bil itu maksimum,
-#   kemudian bandingkan dengan bil yang lainnya,
-#   jika ada yang lebih besar dari maksimum, jadikan bil itu maksimumnya
-# Output: bil maksimum
+
 def latihan5():
     print("--- Latihan 5: Bilangan Terbesar dari n Bilangan ---")
     n = int(input("Masukkan jumlah bilangan (n): "))
@@ -74,8 +61,7 @@ def latihan5():
 
 
 # Latihan 6: Menentukan bilangan genap atau ganjil
-# Input: suatu bilangan
-# Output: genap / ganjil / nol
+
 def latihan6():
     print("--- Latihan 6: Genap / Ganjil / Nol ---")
     bilangan = int(input("Masukkan suatu bilangan: "))
@@ -88,11 +74,7 @@ def latihan6():
 
 
 # Latihan 7: Menghitung akar-akar persamaan kuadrat
-# D = B^2 - 4*A*C
-# Jika D < 0 maka didapat akar imajiner
-# Jika D = 0 maka X1 = X2 yang didapat dari -B / (2*A)
-# Jika D > 0 maka ada dua akar:
-#   X1 = (-B + sqrt(D)) / (2*A) dan X2 = (-B - sqrt(D)) / (2*A)
+
 def latihan7():
     print("--- Latihan 7: Akar Persamaan Kuadrat Ax^2 + Bx + C = 0 ---")
     a = float(input("Masukkan nilai A: "))
