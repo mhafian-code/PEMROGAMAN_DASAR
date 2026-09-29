@@ -2,8 +2,7 @@
 
 Kumpulan 7 soal latihan algoritma beserta flowchart-nya.
 
-Repo ini berisi dua bagian: kode Python (`latihan.py`) dan diagram alur
-SVG (`flowchart.html`) yang dihasilkan oleh script terpisah.
+Berisi kode Python (`latihan.py`) dan diagram alur SVG (`flowchart.html`).
 
 ## Daftar Isi
 
@@ -31,46 +30,19 @@ bilangan.
 
 ## Flowchart
 
-```bash
-python buat_flowchart.py   # menulis flowchart.html
-```
-
 Buka `flowchart.html` di browser. Tiap soal ada di kotak terpisah lengkap
 dengan legenda simbol, dan siap dicetak ke PDF lewat `Ctrl+P`.
 
-Untuk memvalidasi geometri diagram (node keluar kanvas, node tumpang tindih,
-garis panah yang menembus kotak, teks yang melebihi ukuran kotak):
-
-```bash
-python cek_flowchart.py   # harus keluar "MASALAH: 0"
-```
+Diagram digambar sebagai SVG langsung di dalam `flowchart.html`, tidak ada
+library atau dependensi tambahan.
 
 ## Struktur File
 
 ```
-latihan.py         # 7 latihan, masing-masing satu fungsi
-buat_flowchart.py  # generator flowchart.html (SVG, tanpa dependensi)
-cek_flowchart.py   # pemeriksa geometri diagram
-flowchart.html     # hasil generate, 7 diagram
+latihan.py       # 7 latihan, masing-masing satu fungsi
+flowchart.html   # flowchart nomor 1 sampai 7
 index.html
 ```
-
-### Cara flowchart dibuat
-
-Koordinat tiap bentuk dihitung di `buat_flowchart.py`. Kelas `Node`
-menggambar satu simbol flowchart dan menyimpan koordinat sisinya (`top`,
-`bottom`, `left`, `right`), sehingga pemanggilan berikutnya cukup
-menghitung titik sambung antar simbol:
-
-```python
-a = Node(380, 30, "MULAI", "terminal")
-b = Node(380, 100, "Input suhu Celcius (C)", "input")
-edge([(380, a.bottom), (380, b.top)])
-```
-
-Jenis simbol yang tersedia: `terminal` (mulai / selesai), `proses`,
-`input`, `output`, `decision` (percabangan), dan `merge` (titik gabung
-untuk cabang yang berakhir pada output yang sama).
 
 ## Catatan
 
