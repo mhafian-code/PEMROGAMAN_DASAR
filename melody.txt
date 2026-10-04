@@ -1,0 +1,13 @@
+# melodi nengoro angin - satu nada per baris
+# isi sendiri dari sumber notasi yang kamu pakai
+# contoh: C4, D4, E4, G4
+#
+# baris kosong dan yang diawali # akan diabaikan
+C4
+D4
+E4
+G4
+A4
+G4
+E4
+C4

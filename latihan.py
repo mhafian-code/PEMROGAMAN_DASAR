@@ -3,7 +3,7 @@ import math
 # Latihan 1: Konversi suhu Celcius menjadi Reamur dan Fahrenheit
 
 def latihan1():
-    print("--- Latihan 1: Konversi Celcius ke Reamur & Fahrenheit ---")
+    print(" Latihan 1: Konversi Celcius ke Reamur & Fahrenheit ")
     c = float(input("Masukkan suhu dalam Celcius: "))
     r = 4/5 * c
     f = 9/5 * c + 32
@@ -14,7 +14,7 @@ def latihan1():
 # Latihan 2: Sisi miring segitiga siku-siku
 
 def latihan2():
-    print("--- Latihan 2: Sisi Miring Segitiga Siku-siku ---")
+    print(" Latihan 2: Sisi Miring Segitiga Siku-siku ")
     a = float(input("Masukkan panjang sisi a: "))
     b = float(input("Masukkan panjang sisi b: "))
     c = math.sqrt(a**2 + b**2)
@@ -24,7 +24,7 @@ def latihan2():
 # Latihan 3: Menghitung usia berdasarkan tahun lahir dan tahun sekarang
 
 def latihan3():
-    print("--- Latihan 3: Menghitung Usia ---")
+    print(" Latihan 3: Menghitung Usia ")
     tl = int(input("Masukkan tahun lahir (tl): "))
     ts = int(input("Masukkan tahun sekarang (ts): "))
     umur = ts - tl
@@ -34,7 +34,7 @@ def latihan3():
 # Latihan 4: Menguji apakah suhu (Celcius) adalah beku, cair, gas
 
 def latihan4():
-    print("--- Latihan 4: Beku / Cair / Gas ---")
+    print(" Latihan 4: Beku / Cair / Gas ")
     suhu = int(input("Masukkan suhu dalam Celcius: "))
     if suhu < 0:
         status = "beku"
@@ -48,7 +48,7 @@ def latihan4():
 # Latihan 5: Mengetahui bilangan terbesar dari n buah bilangan
 
 def latihan5():
-    print("--- Latihan 5: Bilangan Terbesar dari n Bilangan ---")
+    print("Latihan 5: Bilangan Terbesar dari n Bilangan ")
     n = int(input("Masukkan jumlah bilangan (n): "))
     maksimum = None
     for i in range(1, n + 1):
@@ -63,7 +63,7 @@ def latihan5():
 # Latihan 6: Menentukan bilangan genap atau ganjil
 
 def latihan6():
-    print("--- Latihan 6: Genap / Ganjil / Nol ---")
+    print(" Latihan 6: Genap / Ganjil / Nol ")
     bilangan = int(input("Masukkan suatu bilangan: "))
     if bilangan == 0:
         print("Output: nol")
